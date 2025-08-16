@@ -1,0 +1,194 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: url('https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=1920&q=80') no-repeat center center fixed;
+  background-size: cover;
+  color: #ffffff;
+}
+
+main {
+  background-color: rgba(0, 30, 60, 0.7); /* dark blue transparent overlay */
+  padding: 40px;
+  border-radius: 10px;
+  margin: 20px;
+}
+
+h1, h2, h3 {
+  color: #a7c5eb;
+}
+
+section {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  backdrop-filter: blur(5px);
+}
+
+button {
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.about {
+  background-color: rgba(0, 51, 102, 0.8); /* deep blue with some transparency */
+  color: #f0f8ff;
+  text-align: center;
+  padding: 40px 20px;
+  border-radius: 12px;
+  margin-top: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #a7c5eb;
+  margin-bottom: 15px;
+}
+
+.projects-section {
+  background: linear-gradient(to right, #dbeafe, #bfdbfe); /* soft blue gradient */
+  padding: 60px 20px;
+  border-radius: 12px;
+  margin: 20px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+}
+
+.projects-section .section-title {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  color: #1e3a8a; /* dark blue for contrast */
+  text-align: center;
+}
+
+.projects-section .section-description {
+  font-size: 1.1rem;
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto 40px;
+  color: #1e40af;
+}
+
+.projects-section {
+  background: linear-gradient(to right, #dbeafe, #bfdbfe); /* soft blue gradient */
+  padding: 60px 20px;
+  border-radius: 12px;
+  margin: 20px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+}
+
+.projects-section .section-title {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  color: #1e3a8a;
+  text-align: center;
+}
+
+.projects-section .section-description {
+  font-size: 1.1rem;
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto 40px;
+  color: #1e40af;
+}
+
+.project-card {
+  background-color: white;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.project-card h3 {
+  color: #1d4ed8;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  font-size: 0.95rem;
+  color: #374151;
+}
+
+.project-card {
+  background-color: white;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 700px;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.project-icon {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.project-card h3 {
+  color: #1d4ed8;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  font-size: 0.95rem;
+  color: #374151;
+}
+
+.see-more-btn {
+  margin-top: 10px;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+.see-more-btn:hover {
+  background-color: #1e40af;
+}
+
+.project-details {
+  margin-top: 12px;
+  background-color: #f0f9ff;
+  border-left: 4px solid #3b82f6;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  color: #1f2937;
+  white-space: pre-line;
+  transition: all 0.3s ease;
+}
+
+/* Highlight background when project is active */
+.project-card.active-background {
+  background: linear-gradient(135deg, #cce4ff 0%, #e6f2ff 100%);
+  transition: background 0.3s ease;
+}
+
+/* Optional: add hover effect to title to show it’s clickable */
+.clickable-title:hover {
+  color: #2563eb;
+  text-decoration: underline;
+}
